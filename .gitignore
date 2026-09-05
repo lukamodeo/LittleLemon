@@ -11,3 +11,7 @@ env/
 __pycache__/
 *.py[cod]
 *.egg-info/
+
+# Others
+*.bkp
+*.txt
