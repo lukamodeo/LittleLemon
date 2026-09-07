@@ -29,11 +29,13 @@ class UserViewSet(ModelViewSet):
 class MenuItemsView(ListCreateAPIView):
     queryset = MenuItem.objects.all()
     serializer_class = MenuItemSerializer
+    permission_classes = [IsAuthenticated]
 
 
 class SingleMenuItemView (RetrieveUpdateDestroyAPIView):
     queryset = MenuItem.objects.all()
     serializer_class = MenuItemSerializer
+    permission_classes = [IsAuthenticated]
 
 
 class BookingViewSet(ModelViewSet):

@@ -30,7 +30,7 @@ urlpatterns = [
     path('api/', include('restaurant.urls')),
 
     # tables under restaurant/booking/
-    path('restaurant/booking/', include(router.urls)),
+    path('api/booking/', include(router.urls)),
 
     # djoser endpoints
     path('auth/', include('djoser.urls')),
